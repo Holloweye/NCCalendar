@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NCMainController.h"
+#import "Arguments.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        [Arguments addArgumentsC:argc args:argv];
+        
+        NCMainController *controller = [[NCMainController alloc] init];
+        [controller main];
     }
     return 0;
 }

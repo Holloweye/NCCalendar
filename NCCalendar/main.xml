@@ -1,0 +1,31 @@
+<NCCanvas>
+	<NCText text="[ Calendar 0.1 ]" gravity="topCenter" maxHeight="1" lineBreak="noWrapping"/>
+	<NCScrollDecorator id="scroll" 
+					   gravity="middleLeft" 
+					   maxHeight="parentHeight-2" 
+					   minWidth="parentWidth-31"
+					   maxWidth="parentWidth-31">
+		<NCLinearLayout>
+			<NCLinearLayout id="1" orientation="horizontal"/>
+			<NCLinearLayout id="2" orientation="horizontal"/>
+			<NCLinearLayout id="3" orientation="horizontal"/>
+			<NCLinearLayout id="4" orientation="horizontal"/>
+			<NCLinearLayout id="5" orientation="horizontal"/>
+			<NCLinearLayout id="6" orientation="horizontal"/>
+			<NCLinearLayout id="7" orientation="horizontal"/>
+			<NCLinearLayout id="8" orientation="horizontal"/>
+			<NCLinearLayout id="9" orientation="horizontal"/>
+			<NCLinearLayout id="10" orientation="horizontal"/>
+			<NCLinearLayout id="11" orientation="horizontal"/>
+			<NCLinearLayout id="12" orientation="horizontal"/>
+		</NCLinearLayout>
+	</NCScrollDecorator>
+	<NCLinearLayout id="events"
+					gravity="middleRight"
+					minHeight="parentHeight-2"
+					maxHeight="parentHeight-2"
+					minWidth="30"
+					maxWidth="30">
+	</NCLinearLayout>
+	<NCText text="User up/down arrows to scroll" gravity="bottomCenter" maxHeight="1" lineBreak="noWrapping"/>
+</NCCanvas>

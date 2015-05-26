@@ -1,0 +1,97 @@
+<!--
+May 2015
+Mo Tu We Th Fr Sa Su
+27 28 29 30 1  2  3
+4  5  6  7  8  9  10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+1  2  3  4  5  6  7
+-->
+<NCCanvas minWidth="22" 
+		  maxWidth="22" 
+		  minHeight="9" 
+		  maxHeight="9">
+	<NCText id="monthText" gravity="topLeft" maxHeight="1" lineBreak="noWrapping"/>
+	<NCLinearLayout orientation="horizontal" 
+					 minHeight="parentHeight-1" 
+		  			 maxHeight="parentHeight-1"
+					 gravity="bottomLeft">
+		<!-- M -->
+		<NCLinearLayout id="moColumn" maxWidth="3" minWidth="3">
+			<NCText text="Mo" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- T -->
+		<NCLinearLayout id="tuColumn" maxWidth="3" minWidth="3">
+			<NCText text="Tu" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- W -->
+		<NCLinearLayout id="weColumn" maxWidth="3" minWidth="3">
+			<NCText text="We" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- T -->
+		<NCLinearLayout id="thColumn" maxWidth="3" minWidth="3">
+			<NCText text="Th" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- F -->
+		<NCLinearLayout id="frColumn" maxWidth="3" minWidth="3">
+			<NCText text="Fr" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- S -->
+		<NCLinearLayout id="saColumn" maxWidth="3" minWidth="3">
+			<NCText text="Sa" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+
+		<!-- S -->
+		<NCLinearLayout id="suColumn" maxWidth="3" minWidth="3">
+			<NCText text="Su" lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+			<NCText lineBreak="noWrapping"/>
+		</NCLinearLayout>
+	</NCLinearLayout>
+</NCCanvas>
