@@ -1,4 +1,4 @@
-<NCCanvas>
+<NCRelativeLayout>
 	<NCText text="[ Calendar 0.1 ]" gravity="topCenter" maxHeight="1" lineBreak="noWrapping"/>
 	<NCScrollDecorator id="scroll" 
 					   gravity="middleLeft" 
@@ -28,4 +28,4 @@
 					maxWidth="30">
 	</NCLinearLayout>
 	<NCText text="User up/down arrows to scroll" gravity="bottomCenter" maxHeight="1" lineBreak="noWrapping"/>
-</NCCanvas>
+</NCRelativeLayout>

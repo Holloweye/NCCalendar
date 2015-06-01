@@ -57,7 +57,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01CD8C3D99C59CF9E5F4ADEB /* libPods-UserLoginLog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UserLoginLog.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1623821B0B90BA0094C250 /* NCCalendar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NCCalendar; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBD7CD61B15016600E1E42B /* Arguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arguments.h; sourceTree = "<group>"; };
 		2CBD7CD71B15016600E1E42B /* Arguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arguments.m; sourceTree = "<group>"; };
@@ -131,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				2CBD7CE51B15017C00E1E42B /* NCursesFramework.xcodeproj */,
-				01CD8C3D99C59CF9E5F4ADEB /* libPods-UserLoginLog.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

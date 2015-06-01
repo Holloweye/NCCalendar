@@ -6,7 +6,7 @@ Första maj
 May 1 06:00 - May 2 06:00
 
 -->
-<NCCanvas bottomPadding="1">
+<NCRelativeLayout bottomPadding="1">
 	<NCText id="title" gravity="topLeft"/>
 	<NCText id="time" gravity="bottomLeft"/>
-</NCCanvas>
+</NCRelativeLayout>

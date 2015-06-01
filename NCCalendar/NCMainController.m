@@ -79,28 +79,27 @@
                       withEvents:events];
     }
     
+    const NSUInteger monthWidth = [[months objectAtIndex:0] sizeWithinBounds:CGSizeMake(NSIntegerMax, NSIntegerMax)].width;
+
     while(true) {
-        CGSize screenSize = [[NCCursesPlatform factory] screenSize];
+        const CGSize screenSize = [[NCCursesPlatform factory] screenSize];
+        const NSUInteger monthsAreaWidth = [scroll sizeWithinBounds:screenSize].width;
         
         // Clear children
         for(NCCanvas *graphic in rows) {
-            NSArray *children = [NSArray arrayWithArray:graphic.children];
-            for(NCGraphic *child in children) {
-                [graphic removeChild:child];
-            }
+            [graphic removeAllChildren];
         }
         
-        int m = 0;
-        int row = 0;
-        int w = 0;
+        NSUInteger m = 0;
+        NSUInteger row = 0;
+        NSUInteger w = 0;
         while(m < months.count) {
-            [[rows objectAtIndex:row] addChild:[months objectAtIndex:m]];
-            w += 21;
-            if(w + 21 > screenSize.width) {
+            [[rows objectAtIndex:row] addChild:[months objectAtIndex:m++]];
+            w += monthWidth;
+            if(w + monthWidth >= monthsAreaWidth) {
                 w = 0;
                 row++;
             }
-            m++;
         }
         
         NCRendition *rendition = [root drawInBounds:screenSize
@@ -116,10 +115,9 @@
             [scroll setOffset:CGSizeMake(scroll.offset.width, scroll.offset.height-8)];
         }
     }
-    
 }
 
-- (void)updateEventsDisplay:(NCLinearLayout*)eventsLinearLayout
+- (void)updateEventsDisplay:(NCGraphic*)eventsLinearLayout
                  withEvents:(NSArray*)events
 {
     NSString *exePath = [Arguments executablePath];
@@ -169,8 +167,8 @@
         for(int d = 0; d < 7; d++) {
             NSDate *day = [firstDay dateByAddingTimeInterval:w*86400*7 + d*86400];
             
-            NCLinearLayout *column = (NCLinearLayout*)[columns objectAtIndex:d];
-            NCText *dayText = [column.children objectAtIndex:w+1];
+            NCGraphic *column = [columns objectAtIndex:d];
+            NCText *dayText = [[column getCanvas].children objectAtIndex:w+1];
             
             BOOL isCurrentMonth = [self.cal isSameMonthForDate:day
                                                       andMonth:m];
